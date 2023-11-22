@@ -1,0 +1,55 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  
+  
+  button {
+    padding: 5px 6px;
+    background-color: red; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none;
+    cursor: pointer;
+    margin-right: 5px; /* Márgenes para separar los botones */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s; /* Efecto de transición al pasar el mouse */
+  
+    /* Cambio de color al pasar el mouse */
+    &:hover {
+      background-color: blue; /* Nuevo color de fondo al pasar el mouse */
+    }
+  }
+  
+  
+  /* Estilos para el botón "NUEVO" */
+  .new-button {
+    padding: 15px 30px;
+    background-color: #878796; /* Cambia el color de fondo a verde */
+    margin-top: 10px solid ;
+  
+    color: blue; /* Cambia el color de texto a blanco */
+    border: none;
+    cursor: pointer;
+    border-radius: 9px;
+    transition: background-color 0.8s;
+    margin-right: 10px; /* Espacio a la derecha para separar los botones */
+    float: right; /* Coloca el botón a la derecha */
+    margin-top: 20px; /* Agrega un margen superior para separar de la tabla */
+    background: #5f6c81;
+    box-shadow: 6px 6px 20px -1px #496388,
+        -6px -6px 10px -1px #537686;
+        margin-bottom: 30px;
+  }
+  
+  .new-button:hover {
+    background-color: #ad9680(96, 73, 158); /* Cambia el color de fondo al pasar el mouse */
+  }
+  
+  

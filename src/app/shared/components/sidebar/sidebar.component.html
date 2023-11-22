@@ -1,0 +1,37 @@
+<nav class="menu__side">
+  <ul class="options__menu">
+    <li>
+      <a class="option" [routerLink]="['/home/convenio']">
+        <i class="far fa-file" title="Portafolio"></i>
+        <h4>LIBROS</h4>
+      </a>
+    </li>
+    <li class="selected">
+      <a class="option" [routerLink]="['/home/autor']">
+        <i class="fas fa-user" title="Autor"></i> <!-- Utiliza el ícono de persona -->
+        <h4>Autores</h4>
+      </a>
+      <ul class="sub-options__menu" *ngIf="isSubmenuVisible">
+        <!-- Opciones del submenú aquí -->
+      </ul>
+    </li> 
+    <li class="selected">
+      <a class="option" [routerLink]="['/home/categoria']">
+        <i class="fas fa-file" title="Categoria"></i> <!-- Utiliza el ícono de persona -->
+        <h4>Categoria</h4>
+      </a>
+      <ul class="sub-options__menu" *ngIf="isSubmenuVisible">
+        <!-- Opciones del submenú aquí -->
+      </ul>
+    </li> 
+    <li class="selected">
+      <a class="option" [routerLink]="['/home/editorial']">
+        <i class="fas fa-file" title="Editorial"></i> <!-- Utiliza el ícono de persona -->
+        <h4>Editorial</h4>
+      </a>
+      <ul class="sub-options__menu" *ngIf="isSubmenuVisible">
+        <!-- Opciones del submenú aquí -->
+      </ul>
+    </li> 
+  </ul>
+</nav>

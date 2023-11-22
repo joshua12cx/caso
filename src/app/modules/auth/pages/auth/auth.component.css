@@ -1,0 +1,156 @@
+            .container-login{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('../../../../../assets/mg/crai.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            
+            }
+            
+
+            .container {
+                opacity: 0.9 ;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+                position: relative;
+                overflow: hidden;
+                width: 100%;
+                max-width: 40%; /* Cambiado al 50% */
+                min-height: 70%;
+            }
+            .inicio{
+                height: 100px;
+                width: 100px;
+                border-radius: 50px;
+                
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                
+            }
+                
+            
+            
+          
+            
+            .container a{
+                color: #333;
+                font-size: 13px;
+                text-decoration: none;
+                margin: 15px 0 10px;
+            }
+            
+            
+            .container button{
+                background-color: darkcyan;
+                color: #fff;
+                font-size: 12px;
+                padding: 10px 45px;
+                border: 1px solid transparent;
+                border-radius: 8px;
+                font-weight: 600;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
+                margin-top: 10px;
+                cursor: pointer;
+            }
+            
+           
+            
+            .container form{
+                background-color: #fff;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                padding: 0 100x;
+                height: 100%;
+            }
+            
+            
+            .container input{
+                background-color: #eee;
+                border: none;
+                margin: 8px 0;
+                padding: 10px 15px;
+                font-size: 13px;
+                border-radius: 8px;
+                width: 60%;
+                outline: none;
+            }
+            
+            .form-container {
+                position: absolute;
+                top: 50%;
+                height: 100%;
+                transform: translateY(-50%);
+                transition: all 0.6s ease-in-out;
+                margin-left: 150px;
+            }
+            
+            
+            .sign-in{
+                left: 0;
+                width: 50%;
+            }
+            
+       
+            
+         
+            .social-icons{
+                margin: 20px 0;
+            }
+            
+            .social-icons a{
+                border: 1px solid #201717;
+                border-radius: 20%;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                margin: 0 3px;
+                width: 40px;
+                height: 40px;
+            }
+
+            
+        
+         
+        
+         
+            
+         
+         
+         
+            
+            .container.active .toggle-right{
+                transform: translateX(200%);
+            }
+
+            .form-container.sign-in h1 {
+                
+                font-size: 50px; /* Tamaño del tipo de letra */
+                color: rgb(2, 2, 107); /* Color del texto */
+                text-align: center; /* Alineación del texto */
+                text-transform: uppercase; /* Convierte el texto a mayúsculas */
+                letter-spacing: 2px; /* Espaciado entre letras */
+                margin-bottom: 20px; /* Espaciado inferior */
+                margin-left: 11px;
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Sombra del texto */
+                cursor: pointer;
+                border-radius: 9px;
+                transition: background-color 0.8s;
+            
+                border: none;
+
+            }
+            
+            /* Efecto de animación para el título */
+            .form-container.sign-in h1 :hover {
+                background-color: rgb(96, 73, 158); /* Cambia el color de fondo al pasar el mouse */
+              }
+              
+              

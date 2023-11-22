@@ -1,0 +1,95 @@
+form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 250px;
+  margin: 0 auto;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+}
+
+input {
+  margin-top: 0cqi;
+}
+
+
+input[type="date"],
+input[type="text"],
+input[type="number"],
+input[type="url"],
+textarea#descripcion,
+label,
+
+select {
+ 
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+  margin: 0 10px;
+  width: 200px;
+  font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+}
+
+input[type="date"] {
+  width: 200px;
+}
+
+input[type="text"] {
+  width: 200px;
+}
+
+input[type="number"] {
+  width: 200px;
+}
+
+input[type="url"] {
+  width: 200px;
+  padding: 0 10px;
+}
+
+textarea#descripcion {
+  width: 200px;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+}
+
+label {
+  font-weight: bold;
+  color: #000000;
+  font-size: 18px;
+  margin-bottom: 5px;
+  font: oblique bold 120% cursive;
+  font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+}
+
+label[for="cabecera"] {
+  font-size: 15px;
+  font-weight: bold;
+  color: black;
+  padding: 7px 60px;
+  border-radius: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  display: flex; /* Establece el contenedor como flex */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+}
+
+
+select {
+  font-family: 'Times New Roman', Times, serif; /* Cambia la fuente a Times New Roman */
+}
+
+.jp{
+  background-color: aqua;
+}
+.pp{
+background-color: crimson;
+}

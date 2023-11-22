@@ -1,0 +1,29 @@
+<button mat-raised-button (click)="openDialog()" class="new-button">nueva categoria</button>
+
+<table>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Editorial</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let editorial of editoriallist">
+            <td>{{ editorial.ideditorial }}</td>
+            <td>{{ editorial.editorial }}</td>
+
+            <td>
+                <div class="icon-buttons">
+                    <button (click)="editItem(editorial)">
+                        <i class="fas fa-pencil-alt"></i>
+                    </button>
+
+                    <button (click)="deleteItem(editorial)">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </div>
+            </td>
+        </tr>
+    </tbody>
+</table>

@@ -1,0 +1,27 @@
+
+<form [formGroup]="formGroup" (ngSubmit)="send()">
+    <!-- Div innecesario -->
+    <div>
+      <label for="cabecera">Crear Nueva Editorial</label>
+    </div>
+    <div>
+      <label for="id">ID:</label>
+      <input type="text" id="ideditorial" name="editorial" formControlName="ideditorial" >
+    </div>
+    
+    <div>
+      <label for="editorial">Editorial:</label>
+      <input type="text" id="editorial" name="editorial" formControlName="editorial">
+    </div>
+    
+  
+    
+  
+    <!-- Usar mat-dialog-actions para los botones -->
+    <!-- Usar mat-dialog-actions para los botones -->
+<mat-dialog-actions>
+  <button mat-raised-button color="primary" type="submit" (click)="saveAndClose()">Guardar</button>
+  <button mat-raised-button color="warn" (click)="onNoClick()">Cancelar</button>
+</mat-dialog-actions>
+
+  

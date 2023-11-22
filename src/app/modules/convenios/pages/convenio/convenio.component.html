@@ -1,0 +1,48 @@
+
+  <button mat-raised-button (click)="openDialog()" class="new-button">NUEVO</button>
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Título</th>
+      <th>Fecha</th>
+      <th>Autor</th>
+      <th>Categoría</th>
+      <th>Editorial</th>
+      <th>Idioma</th>
+      <th>Páginas</th>
+      <th>Descripción</th>
+      <th>Portada</th>
+      <th>Acciones</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let libro of librosList">
+      <td>{{ libro.asin }}</td>
+      <td>{{ libro.titulo }}</td>
+      <td>{{ libro.lanzamiento | date:'dd/MM/yyyy' }}</td>
+
+      <td>{{ libro.id_autor?.autor }}</td>
+     <td>{{libro.id_editorial?.editorial}}</td>
+     <td>{{libro.id_categoria?.categoria}}</td>
+      <td>{{ libro.idioma }}</td>
+      <td>{{ libro.paginas }}</td>
+      <td>{{ libro.descripcion }}</td>
+      <td>{{ libro.portada }}</td>
+      <td>
+        <div class="icon-buttons">
+          <button (click)="editItem(libro)">
+            <i class="fas fa-pencil-alt"></i>
+          </button>
+
+          <button (click)="deleteItem(libro)">
+            <i class="fas fa-trash-alt"></i>
+          </button>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>

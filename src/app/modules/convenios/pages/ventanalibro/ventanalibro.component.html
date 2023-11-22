@@ -1,0 +1,69 @@
+<form [formGroup]="formGroup" (ngSubmit)="send()">
+  <div>
+    <label for="cabecera"> Nuevo Libro</label>
+  </div>
+  <div>
+    <label for="titulo">Título:</label>
+    <input type="text" id="titulo" name="titulo" formControlName="titulo">
+  </div>
+
+  <div>
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="fecha" formControlName="lanzamiento">
+  </div>
+
+  <div>
+    <label for="autor">Autor:</label>
+    <select id="autor" name="autor" formControlName="autor">
+      <option *ngFor="let autor of autorlist" [value]="autor.idautor">{{ autor.autor }}</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="categoria">Categoría:</label>
+
+
+
+
+    
+    <select id="categoria" name="categoria" formControlName="categoria">
+      <option *ngFor="let categoria of categorialist" [value]="categoria.idcategoria">{{ categoria.categoria }}</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="editorial">Editorial:</label>
+    <select id="editorial" name="editorial" formControlName="editorial">
+      <option *ngFor="let editorial of editoriallist" [value]="editorial.ideditorial">{{ editorial.editorial }}</option>
+    </select>
+  </div>
+  
+  <div>
+    <label for="idioma">Idioma:</label>
+    <input type="text" id="idioma" name="idioma" formControlName="idioma">
+  </div>
+
+  <div>
+    <label for="paginas">Páginas:</label>
+    <input type="number" id="paginas" name="paginas" formControlName="paginas">
+  </div>
+
+  <div>
+    <label for="descripcion">Descripción:</label>
+    <textarea id="descripcion" name="descripcion" formControlName="descripcion"></textarea>
+  </div>
+
+  <div>
+    <label for="portada">Portada</label>
+    <input type="url" id="portada" name="portada" formControlName="portada" placeholder="https://www.ejemplo.com/imagen.jpg">
+  </div>
+
+ 
+ 
+  <div mat-dialog-actions>
+    <button mat-raised-button  type="submit" (click)="saveAndClose()">Guardar</button>
+    <button mat-raised-button  (click)="onNoClick()">Cancelar</button>
+  </div>
+  
+  
+</form>

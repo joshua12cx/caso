@@ -1,0 +1,32 @@
+
+    <button mat-raised-button (click)="openDialog()" class="new-button">nuevo autor</button>
+
+ 
+  
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Autor</th>
+        <th>Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let autor of autorlist">
+        <td>{{ autor.idautor }}</td>
+        <td>{{ autor.autor }}</td>
+       
+        <td>
+          <div class="icon-buttons">
+            <button (click)="editItem(autor)">
+              <i class="fas fa-pencil-alt"></i>
+            </button>
+  
+            <button (click)="deleteItem(autor)">
+              <i class="fas fa-trash-alt"></i>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

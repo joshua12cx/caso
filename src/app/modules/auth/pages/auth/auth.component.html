@@ -1,0 +1,24 @@
+<section class="container-login">
+    <div class="container" id="container">
+         
+         <div class="form-container sign-in">
+             <form [formGroup]="formLogin" (ngSubmit)="sendUser()">
+                 <h1>CRAI UPEU</h1>
+                 <img src="../../../../../assets/mg/inicio.png" class="inicio" >
+                 <br>
+                 <div class="jos">User:</div>
+                 <input type="text" placeholder="Usuario" formControlName="user">
+                 <div class="jos">Password:</div>
+                 <input type="password" placeholder="Contraseña" formControlName="password">
+                 
+                 <a href="#">Olvidaste tu contraseña..?</a>
+                 <button>Ingresar</button>
+             </form>
+         </div>
+         <div class="toggle-container">
+         
+        </div>
+        
+     </div>
+ </section>
+ 
